@@ -574,14 +574,14 @@ header{
     margin-top:40px;
 }
 
-.contact-form{
+#contact-form{
     display:flex;
     flex-direction:column;
     gap:20px;
 }
 
-.contact-form input,
-.contact-form textarea{
+#contact-form input,
+#contact-form textarea{
     padding:15px;
     border:none;
     border-radius:10px;
@@ -591,8 +591,8 @@ header{
     outline:none;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
+#contact-form input:focus,
+#contact-form textarea:focus{
     border:2px solid #38bdf8;
 }
 
@@ -895,22 +895,22 @@ transform:translateY(0);
 }
 
 }
-.contact-form input,
-.contact-form textarea{
+#contact-form input,
+#contact-form textarea{
 
 transition:.35s;
 
 }
 
-.contact-form input:hover,
-.contact-form textarea:hover{
+#contact-form input:hover,
+#contact-form textarea:hover{
 
 transform:scale(1.02);
 
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
+#contact-form input:focus,
+#contact-form textarea:focus{
 
 box-shadow:0 0 20px rgba(56,189,248,.5);
 
