@@ -87,15 +87,31 @@ button.onclick = () => {
 // Contact Form
 // ==============================
 
-const form = document.querySelector(".contact-form");
+const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
-    alert("Thank you! Your message has been received.");
+    emailjs.sendForm(
+        "service_wz2nh56",
+        "template_zy9ccbp",
+        this
+    )
+    .then(function () {
 
-    form.reset();
+        alert("Message sent successfully!");
+
+        form.reset();
+
+    })
+    .catch(function (error) {
+
+        alert("Failed to send message.");
+
+        console.log(error);
+
+    });
 
 });
 
