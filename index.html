@@ -18,7 +18,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("hQ1_HoP-sHgQICDH6");
 </script>
 
 <script src="script.js"></script>
@@ -402,35 +402,39 @@ will be added in the next parts -->
         <p>Let's connect and build something amazing together.</p>
     </div>
 
-    <div class="contact-container">
+    <form id="contact-form">
 
-        <form class="contact-form">
+<input
+type="text"
+name="from_name"
+placeholder="Your Name"
+required>
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required>
+<input
+type="email"
+name="from_email"
+placeholder="Your Email"
+required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required>
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
 
-            <input
-                type="text"
-                placeholder="Subject"
-                required>
+<textarea
+name="message"
+rows="6"
+placeholder="Message"
+required></textarea>
 
-            <textarea
-                rows="6"
-                placeholder="Your Message"
-                required></textarea>
+<button class="btn">
 
-            <button type="submit" class="btn">
-                Send Message
-            </button>
+Send Message
 
-        </form>
+</button>
+
+</form>
 
         <div class="contact-info">
 
